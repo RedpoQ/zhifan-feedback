@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest a product improvement for future versions
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Request description
+      description: What would you like to add or improve?
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Usage scenario
+      description: In what situation would this help?
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Acceptable alternatives
+      description: If there is a simpler workaround, describe it here.

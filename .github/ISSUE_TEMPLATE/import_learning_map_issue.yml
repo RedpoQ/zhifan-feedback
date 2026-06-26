@@ -1,0 +1,72 @@
+name: Import or learning map issue
+description: Report document import or learning map title problems
+title: "[Import] "
+labels:
+  - bug
+  - import
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: v0.1-alpha
+    validations:
+      required: true
+  - type: dropdown
+    id: file_type
+    attributes:
+      label: File type
+      options:
+        - PDF
+        - MD
+        - PPTX
+        - DOCX
+    validations:
+      required: true
+  - type: input
+    id: file_size
+    attributes:
+      label: Document size
+      placeholder: 12 MB
+  - type: dropdown
+    id: sample_share
+    attributes:
+      label: Can you share a sanitized sample?
+      options:
+        - Yes
+        - No
+        - Maybe
+    validations:
+      required: true
+  - type: dropdown
+    id: import_success
+    attributes:
+      label: Did the import finish successfully?
+      options:
+        - Yes
+        - No
+        - Partially
+    validations:
+      required: true
+  - type: dropdown
+    id: title_issue
+    attributes:
+      label: Is the learning map title abnormal?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe what you imported and what went wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Error screenshots
+      description: Please remove private data before attaching.

@@ -1,0 +1,70 @@
+name: Desktop startup issue
+description: Report desktop startup, window, or shutdown cleanup problems
+title: "[Startup] "
+labels:
+  - bug
+  - startup
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: v0.1-alpha
+    validations:
+      required: true
+  - type: dropdown
+    id: window_visible
+    attributes:
+      label: Can you see the main window?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+  - type: dropdown
+    id: stuck_preparing
+    attributes:
+      label: Is it stuck on the preparing screen?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: port_8010
+    attributes:
+      label: Was port 8010 already occupied?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: port_release
+    attributes:
+      label: After closing the app, does port 8010 get released?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: antivirus
+    attributes:
+      label: Antivirus or security software
+      description: Mention Windows Defender or third-party tools if relevant.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or logs
+      description: Please remove private data before attaching anything.

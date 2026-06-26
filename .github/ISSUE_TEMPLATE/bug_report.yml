@@ -1,0 +1,66 @@
+name: Bug report
+description: Report a reproducible product problem in the alpha build
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which release are you using?
+      placeholder: v0.1-alpha
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem description
+      description: What went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide clear steps.
+      placeholder: |
+        1. Open the app
+        2. Import a file
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshots
+      description: Add screenshots if useful. Please blur private data first.
+  - type: dropdown
+    id: sensitive_check
+    attributes:
+      label: Sensitive information check
+      description: Confirm that logs and screenshots are already sanitized.
+      options:
+        - Confirmed
+        - Not sure yet
+    validations:
+      required: true
