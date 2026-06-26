@@ -1,47 +1,59 @@
-# 知返 v0.1-alpha Public Feedback
+# 知返
 
-知返是一个基于学习资料的 AI 学习训练应用。当前公开的是 `v0.1-alpha` Windows portable 测试包，用于收集启动、导入、学习地图和训练流程反馈。
+AI 学习训练系统 · v0.1-alpha
 
-## 当前公开方式
+知返是一个面向本地学习资料的 AI 学习训练应用，目标是把文档导入、学习地图、练习训练和薄弱点复习连接成一个可追踪的学习闭环。
 
-- 当前仅公开 Windows portable 测试包。
-- 主源码仓暂不公开。
-- 内部产品文档与开发记录暂不公开。
-- 暂不接受主源码 Pull Request。
+> `v0.1-alpha` 是早期测试版，功能和交互仍然粗糙，建议先使用测试文档体验。
 
 ## 下载
 
-- Release 页面：<https://github.com/RedpoQ/zhifan-feedback/releases/tag/v0.1-alpha>
+- Windows 便携版：<https://github.com/RedpoQ/zhifan-feedback/releases/tag/v0.1-alpha>
 - 文件名：`zhifan-v0.1-alpha-windows-x64-portable.zip`
 - SHA256：`3934AA3464C115B99F322A86AE636E4DA3C5B06BDFD6C297A554AF887A12C7AA`
 
-## 运行方式
+## 如何运行
 
 1. 下载 zip。
 2. 解压到本地目录。
 3. 运行 `zhifan-desktop.exe`。
 
-## 当前测试范围
+## 当前支持
 
-- 桌面启动
-- 文档导入
-- 学习地图标题
+- PDF / Markdown / PPTX / DOCX 导入
+- 学习地图
 - 学习工作台
-- AI 配置
-- 退出清理
+- 薄弱点复习
+- 本地 AI 配置
 
-## 当前支持的导入格式
+## 反馈问题
 
-- PDF
-- Markdown
-- PPTX
-- DOCX
+欢迎通过 Issues 反馈：
 
-## 说明
+- 桌面启动失败
+- 卡在准备中
+- 文档导入失败
+- 学习地图标题异常
+- AI 配置问题
+- 退出后端口残留
+- 其他使用体验建议
 
-- 这是 early alpha，功能和交互仍然粗糙。
-- 不建议用于重要数据。
-- 建议先用测试文档体验。
-- 欢迎通过 Issues 提交问题和反馈。
+提交 issue 前请注意：
 
-更多限制请见 [docs/KNOWN_LIMITATIONS.md](docs/KNOWN_LIMITATIONS.md)。
+- 不要粘贴 API Key / Token
+- 不要上传包含隐私的完整文档
+- 截图和日志请先脱敏
+
+## 已知限制
+
+详见 [docs/KNOWN_LIMITATIONS.md](docs/KNOWN_LIMITATIONS.md)。
+
+## 隐私说明
+
+详见 [docs/PRIVACY.md](docs/PRIVACY.md)。
+
+## 开发说明
+
+当前仓库用于发布测试版本、收集反馈和跟踪公开问题；主源码暂未开放。
+
+本项目开发过程中使用 Claude Code、Codex 等 AI 编程工具辅助实现、测试和发布检查。
